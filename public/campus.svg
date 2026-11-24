@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" role="img" aria-label="Illustration of a university hall with a clock tower">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9e3ff"/><stop offset="1" stop-color="#fff3d6"/></linearGradient>
+  </defs>
+  <rect width="640" height="460" rx="28" fill="url(#sky)"/>
+  <circle cx="520" cy="96" r="44" fill="#f5b942" opacity=".9"/>
+  <path d="M0 380c120-46 220-46 320 0s220 46 320 0v80H0z" fill="#d9d2f2"/>
+  <rect x="90" y="236" width="460" height="150" fill="#2b3a7a"/>
+  <rect x="90" y="226" width="460" height="14" fill="#1f2b63"/>
+  <path d="M250 226l70-70 70 70z" fill="#3a4b9a"/>
+  <rect x="290" y="112" width="60" height="114" fill="#2b3a7a"/>
+  <path d="M284 112l36-52 36 52z" fill="#f5b942"/>
+  <circle cx="320" cy="150" r="18" fill="#fff3d6"/><path d="M320 138v13l9 6" stroke="#2b3a7a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g fill="#fff3d6"><rect x="120" y="262" width="30" height="44" rx="15"/><rect x="170" y="262" width="30" height="44" rx="15"/><rect x="440" y="262" width="30" height="44" rx="15"/><rect x="490" y="262" width="30" height="44" rx="15"/><rect x="215" y="270" width="26" height="36" rx="13"/><rect x="399" y="270" width="26" height="36" rx="13"/></g>
+  <rect x="290" y="300" width="60" height="86" rx="30" fill="#f5b942"/>
+  <g fill="#8c7fd1"><rect x="210" y="386" width="220" height="10" rx="5"/><rect x="190" y="396" width="260" height="10" rx="5"/><rect x="170" y="406" width="300" height="10" rx="5"/></g>
+  <g fill="#3f7d5c"><circle cx="58" cy="350" r="26"/><rect x="54" y="350" width="8" height="40"/><circle cx="582" cy="350" r="26"/><rect x="578" y="350" width="8" height="40"/></g>
+</svg>
