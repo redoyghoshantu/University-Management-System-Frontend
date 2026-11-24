@@ -22,3 +22,16 @@ export const PROTECTED_PREFIXES: { prefix: string; role: Role }[] = [
 ];
 
 export const SITE_NAME = "Meridian University";
+
+/** Mirrors the backend: tuition is $50 per credit hour. */
+export const FEE_PER_CREDIT = 50;
+
+export const AUDIT_ACTIONS = [
+  "UPDATE_ROLE",
+  "DELETE_USER",
+  "SOFT_DELETE",
+  "PAYMENT_SUCCESS",
+  "CREATE_EXAM",
+  "SAVE_RESULT",
+  "GOOGLE_LOGIN",
+];
