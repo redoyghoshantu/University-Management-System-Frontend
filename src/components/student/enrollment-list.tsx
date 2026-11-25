@@ -63,11 +63,12 @@ export function EnrollmentList({ initialData }: { initialData: Enrollment[] }) {
             <Badge variant="outline" className="mr-1.5">{e.offering.course.code}</Badge>
             {e.offering.semester.name}
           </p>
+          <p className="mt-1 text-xs font-medium tabular-nums sm:hidden">{formatMoney(fee(e))}</p>
         </div>
       ),
     },
     { header: "Faculty", cell: (e) => e.offering.faculty?.name ?? "—", className: "hidden md:table-cell" },
-    { header: "Tuition", cell: (e) => formatMoney(fee(e)), className: "tabular-nums" },
+    { header: "Tuition", cell: (e) => formatMoney(fee(e)), className: "tabular-nums hidden sm:table-cell" },
     { header: "Status", cell: (e) => <StatusBadge status={e.status} /> },
     { header: "Payment", cell: (e) => <StatusBadge status={e.paymentStatus} />, className: "hidden sm:table-cell" },
     {
@@ -77,7 +78,7 @@ export function EnrollmentList({ initialData }: { initialData: Enrollment[] }) {
         const open = e.status !== "CANCELLED" && e.paymentStatus !== "PAID";
         if (!open) return <span className="text-xs text-muted-foreground">—</span>;
         return (
-          <div className="flex justify-end gap-2">
+          <div className="flex flex-col justify-end gap-2 sm:flex-row">
             <Button size="sm" variant="accent" loading={pay.isPending && pay.variables === e.id} disabled={pay.isPending} onClick={() => pay.mutate(e.id)}>
               <CreditCard /> Pay
             </Button>
